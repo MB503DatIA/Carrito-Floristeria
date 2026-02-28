@@ -27,7 +27,7 @@ export async function listProducts() {
     }
 
     container.innerHTML = products.data.map(product => `
-        <div class="product position-relative card col-12 col-sm-5 col-md-5 col-lg-4 p-0">
+        <div class="product col-sm-6 col-md-4 col-lg-3">
             <div class="position-relative">
                 <img src="${product.image}" alt="${product.title}" class="card-img-top z-2">
                 <span class="bg-info text-light py-2 px-4 position-absolute z-3 product-discount"> -${Math.round(((product.oldPrice - product.price) / product.oldPrice) * 100)}%</span>

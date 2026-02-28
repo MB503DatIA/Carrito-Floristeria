@@ -63,7 +63,7 @@ a {
 }
 
 .container {
-    width: min(95%, 128rem);
+    /*width: min(95%, 128rem);*/
     margin: 0 auto;
 }
 
@@ -452,4 +452,10 @@ a {
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.8);
     }
+}
+
+/*Cambios con imagen de cards*/
+.card-img-top {
+  height: 300px;       
+  object-fit: cover;   
 }
