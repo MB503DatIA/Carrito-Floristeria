@@ -44,12 +44,30 @@ export async function listProducts() {
                     <span class="old-price">$${product.oldPrice}</span>
                     <p class="current-price">$${product.price}</p>
                 </div>
-                <button class="btn btn-info text-white" type="button" data-id="${product._id ?? product.id}">
+                <button class="btn btn-info text-white product-add" type="button" data-id="${product._id ?? product.id}">
                     <i class="fa-solid fa-cart-plus"></i> Add Cart
                 </button>
             </div>
         </div>
     `).join('')
 
+    //funcion para mostrar mensaje
+
+      document.querySelectorAll('.product-add').forEach(button => {
+    button.addEventListener('click', () => {
+        notificacionCarrito();
+    });
+});
+
     return products.data
+  
 }
+
+function notificacionCarrito(){
+        const toastElement = document.getElementById('cartToast');
+        const toast = new bootstrap.Toast(toastElement);
+        toast.show();
+}
+
+
+
