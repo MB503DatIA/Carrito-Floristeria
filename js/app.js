@@ -5,4 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     listProducts()
         .then(products => initializeCart(products))
 })
-//console.log('MIGUEl prueba')
+
+//footer
+const year = new Date().getFullYear();
+
+const container = document.getElementsByClassName('footer-page')[0];
+container.textContent = year + ". All rights reserved";

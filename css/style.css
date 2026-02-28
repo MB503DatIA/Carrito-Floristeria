@@ -79,6 +79,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 
 
     .logotipo {
@@ -158,7 +159,7 @@ a {
 
 .banner {
     background: linear-gradient(to right, #71e102 0%, #8bca4c 100%);
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .banner-grid {
@@ -193,7 +194,7 @@ a {
 }
 
 .products {
-    padding: 8rem 0;
+    padding: 2rem 0;
 
     h2 {
         text-align: center;
