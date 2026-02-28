@@ -87,12 +87,8 @@ a {
         color: white;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
-
-        span {
-            font-weight: 200;
-            color: chartreuse;
-            font-size: 4rem;
-        }
+        color: white;
+        font-size: 4rem;
     }
 
     button {
