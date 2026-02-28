@@ -158,8 +158,9 @@ a {
 }
 
 .banner {
-    background: linear-gradient(to right, #71e102 0%, #8bca4c 100%);
+    background: #f8f9fa;
     padding: 2rem 0;
+    display: none;
 }
 
 .banner-grid {
@@ -234,9 +235,19 @@ a {
 
     .product-discount {
         border-top-right-radius: .4rem;
-        bottom: 2rem;
         left: 0;
         font-weight: 700;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background-color: #17a2b8;
+        color: white;
+        padding: 4px 8px;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 6px;
+        z-index: 10;
+        display: inline-block;
     }
 
     .product-info {
@@ -457,6 +468,26 @@ a {
 
 /*Cambios con imagen de cards*/
 .card-img-top {
-  height: 300px;       
-  object-fit: cover;   
+    height: 300px;
+    object-fit: cover;
+}
+
+/*cambios en estilo de las cards*/
+
+.product {
+    border: none;
+    border-radius: 14px;
+}
+
+.product {
+    background: white;
+}
+
+.product {
+    transition: all 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
