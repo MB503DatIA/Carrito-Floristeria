@@ -5,4 +5,4 @@ document.addEventListener('DOMContentLoaded', () => {
     listProducts()
         .then(products => initializeCart(products))
 })
-console.log('MIGUE')
+console.log('MIGUEl prueba')
