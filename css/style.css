@@ -312,6 +312,14 @@ a {
     padding: 2rem;
     border-radius: .8rem;
     z-index: 10;
+    right: -100px !important;
+
+    .cart-responsive{
+        height: 450px;
+        overflow: scroll;
+        scrollbar-color: #bdaaaa #636465;
+        scrollbar-width: thin;
+    }
 
     @media (min-width: 1400px) {
         right: -20rem;
@@ -385,18 +393,6 @@ a {
                     span {
                         margin-left: .5rem;
                     }
-                }
-            }
-
-            td {
-                button {
-                    width: 100%;
-                    background-color: rgb(255, 255, 255, .75);
-                    padding: 1rem;
-                    border-radius: .5rem;
-                    cursor: pointer;
-                    color: #404040;
-                    font-weight: 700;
                 }
             }
         }
@@ -538,6 +534,16 @@ a {
 }
 #checkout-container table tbody td {
     color: #000;
+}
+
+.emptyCart {
+    width: 100% !important;
+    background-color: rgb(255, 255, 255, .75) !important;
+    padding: 1rem !important;
+    border-radius: .5rem !important;
+    cursor: pointer !important;
+    color: #404040 !important;
+    font-weight: 700 !important;
 }
 
 .checkout, .volver {

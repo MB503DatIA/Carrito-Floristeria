@@ -45,7 +45,7 @@ export async function listProducts() {
                     <p class="current-price">$${product.price}</p>
                 </div>
                 <button class="btn btn-info text-white product-add" type="button" data-id="${product._id ?? product.id}">
-                    <i class="fa-solid fa-cart-plus"></i> Add Cart
+                    <i class="fa-solid fa-cart-plus"></i> Agregar a carrito
                 </button>
             </div>
         </div>
